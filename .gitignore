@@ -1,0 +1,26 @@
+# large raw inputs (not distributed here)
+*.rds
+*.Rdata
+*.h5ad
+*.fastq
+*.fastq.gz
+*.cel
+*.zip
+*.7z
+*.rar
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.Rhistory
+.RData
+.ipynb_checkpoints/
+
+# intermediate GROMACS trajectories
+*.xtc
+*.trr
+*.edr
+*.tpr
+*.gro
+*.cpt
+*.log

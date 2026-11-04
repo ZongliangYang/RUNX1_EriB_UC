@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the PLOS ONE article."
+title: "RUNX1-centered regulatory network in ulcerative colitis: analysis code and underlying data"
+authors:
+  - family-names: Yang
+    given-names: Zongliang
+license: MIT
+repository-code: "https://github.com/REPLACE_WITH_YOUR_USERNAME/REPLACE_WITH_REPO_NAME"
