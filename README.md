@@ -2,35 +2,29 @@
 
 Analysis code and underlying data for:
 
-> Zongliang Yang et al. *Integrative single-cell and machine learning analysis of a RUNX1-centered regulatory network in ulcerative colitis: a hypothesis-generating computational study*. (PLOS ONE, PONE-D-26-40968)
+> Zongliang Yang et al. *Integrative single-cell and machine learning analysis defines a RUNX1-centered regulatory network in ulcerative colitis*. PLOS ONE, PONE-D-26-40968.
 
 This repository accompanies the manuscript and satisfies the PLOS ONE **Materials, Software and Code Sharing** policy. All analyses are computational; **no wet-laboratory experiments were performed**.
 
 ---
 
-## Repository layout
+## Files for the revised submission
 
-```
-code/
-  01_bulk_normalize_DEG/     bulk normalization, ComBat, limma DEG
-  02_machine_learning/       LASSO / Random Forest / XGBoost signature
-  03_single_cell/            Seurat QC, Harmony, cell-type annotation
-  04_TF_activity/            pySCENIC + decoupleR TF activity
-  05_CellChat/               CellChat cell–cell communication
-  06_pseudotime_Monocle3/    Monocle3 trajectories
-  07_fibroblast_subtypes/    fibroblast subclustering
-  08_RUNX1_contrast/         RUNX1 virtual-KO / pseudobulk contrast, scTenifoldKnk
-  09_pathway_enrichment/     GSEA / Reactome, GRN
-  10_docking_MD/             AutoDock Vina config + output, MD plotting, EriB SDF, RUNX1 1CMO
-data/
-  S1Underlying_data_...xlsx  minimal underlying dataset (same file as S1 Supporting Information)
-  DEG_results.txt            bulk DEG (training cohort)
-  LASSO_genes.txt            LASSO-selected genes (raw output)
-  ML_final.txt               RF importance + external-validation AUC
-  TF_activity_decoupleR.csv  TF activity scores
-  RUNX1_contrast_deg.csv     RUNX1-high vs RUNX1-low contrast
-  scRNA_DEG/                 per-cell-type differential expression
-```
+- [data.zip](data.zip) includes the submission workbook `S1_Underlying_data_revised.xlsx`, sample and expression tables, fitted model and saved scores, the patient-adjusted bulk differential-expression results, and the selected RUNX1 contrast and enrichment outputs.
+- [code.zip](code.zip) includes the original analysis scripts and two additional scripts in `revision_checks/` for verifying the revised results.
+- [MANIFEST_sources.txt](MANIFEST_sources.txt) lists the archive members, their provenance and their SHA-256 checksums.
+
+The 15 fitted predictors include **NNMT**. RUNX1 was examined separately in the single-cell analyses. `Signature_expression.csv` contains 2,085 values for 15 predictors across 139 biopsies. `Sample_manifest.csv` records the GEO phenotype and historical matrix label for each biopsy. `ROC_with_GEO_labels.csv` retains original scores and makes both sets of labels available.
+
+| Cohort | Samples and role | Revised RF AUC | Revised XGBoost AUC |
+|---|---|---:|---:|
+| GSE107597 | 119 training biopsies from 13 participants with UC, 75 lesional and 44 non-lesional | — | — |
+| GSE96698 | 14 biopsies from two participants, eight active and six inactive | 0.552 | 0.542 |
+| GSE134025 | Six samples, three UC and three healthy | 1.000 | 1.000 |
+
+The archived GSE96698 labels tracked biopsy site. The archived GSE134025 labels were reversed relative to GEO diagnosis. The revised AUCs use the saved scores with a fixed direction and the GEO phenotypes. The model fits are unchanged. `Corrected_AUC.csv` contains unrounded values. Historical scores and summary output are retained for provenance. In particular, `archive/ML_final.txt` uses old endpoints and automatic ROC direction.
+
+`Bulk_DEG_patient_adjusted.csv` supplies the revised Fig 1E/F results. It derives from a model with patient fixed effects in the 119 training biopsies and was computed separately from the archived classifier. `archive/DEG_results.txt` is the earlier output. `RUNX1_contrast_deg.csv` contains the 7,096 fibroblast contrast genes meeting BH-adjusted P < 0.01 and absolute log2 fold change > 0.5. It replaces the earlier pseudobulk export. `KO_enrichment.rds`, the GO and Reactome tables, and their background lists document the corresponding enrichment.
 
 ## Data sources (public)
 
@@ -71,22 +65,22 @@ the analysis logic. Raw GEO inputs are not redistributed here — download them 
 - AutoDock Vina v1.2.0
 - GROMACS 2020.6
 
-## How to reproduce (overview)
+## Verify the revised results
 
-1. **Bulk**: download the three GEO series matrices → `code/01_bulk_normalize_DEG/01_normalize.R` → `02_sva_combat.R` → `03_limma_DEG.R` (thresholds: BH-adj. P < 0.05 and |log2FC| > 0.5).
-2. **Machine learning**: `code/02_machine_learning/01_RUNX1_ML_signature_v2.R` (LASSO → RF/XGBoost → external validation).
-3. **Single-cell**: `code/03_single_cell/` on GSE152999 (Seurat → Harmony → annotation).
-4. **TF activity**: `code/04_TF_activity/` (pySCENIC, then decoupleR/CollecTRI).
-5. **CellChat / Monocle3 / fibroblast subtypes / RUNX1 contrast**: `code/05`–`code/08`.
-6. **Docking / MD**: `code/10_docking_MD/` (Vina config file, ligand SDF, receptor 1CMO; MD analysis scripts).
+Extract `data.zip` into a folder called `data` and `code.zip` into a sibling folder called `code`. Run these commands from inside `data` using R and the limma package. The first command reads the archived model scores and verifies the corrected AUCs and the selected RUNX1 contrasts. The second regenerates `Bulk_DEG_patient_adjusted.csv`.
 
-Exact parameters are reported in the manuscript Methods.
+```sh
+Rscript ../code/revision_checks/Verify_model_and_contrast.R
+Rscript ../code/revision_checks/Recalculate_bulk_DEG.R
+```
+
+For the historical workflows, directories `01` through `10` in the code archive follow the analysis order from bulk preprocessing and machine learning through single-cell analysis and docking. The historical ML code reflects the original matrix labels. Use the revision checks above to reproduce the final reported AUCs.
 
 ## Known data-provenance notes
 
-These notes are provided for transparency; see also the README sheet of the S1 workbook.
+These notes are provided for transparency; see also the Analysis_notes sheet of the S1 workbook.
 
-1. **15-gene signature**: `data/LASSO_genes.txt` and `data/ML_final.txt` list **NNMT**; the manuscript reports **RUNX1** (force-inserted by `code/02_machine_learning/01_RUNX1_ML_signature_v2.R`). Both lists are preserved as generated.
+1. **15-gene signature**: the fitted model, its RF feature names, and the revised S1 all include **NNMT** among the 15 predictors.
 2. **GSE107597 gene matrix**: the symbol-collapsed `GSE107597.normalize.txt` lacks a RUNX1 row (RUNX1 probes 11732933_a_at / 11742191_a_at / 11745150_x_at are present in the probe annotation but were dropped during probe→symbol collapse). GSE96698 and GSE134025 retain RUNX1.
 3. **PDB ID**: docking used **1CMO** (not 1EAQ, which appeared in an older draft).
 4. **EriB formula**: PubChem CID 16202215 is **C20H24O5** (MW 344.4).

@@ -1,1 +1,56 @@
-source_path\t\tpackaged_as\nE:\yhb\溃疡\溃疡\05.normalize\geo05.normalize.R\t\tcode/01_bulk_normalize_DEG/01_normalize.R\nE:\yhb\溃疡\溃疡\06.sva\geo06.sva.R\t\tcode/01_bulk_normalize_DEG/02_sva_combat.R\nE:\yhb\溃疡\溃疡\09.diff\geo09.diff.R\t\tcode/01_bulk_normalize_DEG/03_limma_DEG.R\nE:\yhb\溃疡\溃疡\05.normalize\ML_output\export_ML_txt.R\t\tcode/02_machine_learning/00_export_ML_txt.R\nE:\yhb\溃疡\溃疡\05.normalize\ML_output\RUNX1_ML_诊断模型_v2.R\t\tcode/02_machine_learning/01_RUNX1_ML_signature_v2.R\nE:\yhb\溃疡\溃疡\05.normalize\RUNX1_Regulatory_Network_Model.R\t\tcode/02_machine_learning/02_RUNX1_Regulatory_Network_Model.R\nE:\yhb\溃疡\溃疡\12.Seurat\geo12.Seurat.R\t\tcode/03_single_cell/01_Seurat_QC_Harmony_annotation.R\nE:\yhb\溃疡\溃疡\12.Seurat\1.R\t\tcode/03_single_cell/02_Seurat_downstream.R\nE:\yhb\溃疡\溃疡\12.Seurat\run_pySCENIC.py\t\tcode/04_TF_activity/01_run_pySCENIC.py\nE:\yhb\溃疡\溃疡\12.Seurat\TF_activity_decoupleR.R\t\tcode/04_TF_activity/02_decoupleR_TF_activity.R\nE:\yhb\溃疡\溃疡\12.Seurat\TF_figures.R\t\tcode/04_TF_activity/03_TF_figures.R\nE:\yhb\溃疡\溃疡\12.Seurat\CellChat_analysis.R\t\tcode/05_CellChat/01_CellChat_analysis.R\nE:\yhb\溃疡\溃疡\2-1 SCENIC转录因子分析\2-1 SCENIC转录因子分析\RUNX1_拟时序_Monocle3.R\t\tcode/06_pseudotime_Monocle3/01_Monocle3_pseudotime.R\nE:\yhb\溃疡\溃疡\2-1 SCENIC转录因子分析\2-1 SCENIC转录因子分析\RUNX1_Fibroblast_亚群细分.R\t\tcode/07_fibroblast_subtypes/01_fibroblast_subclustering.R\nE:\yhb\溃疡\溃疡\2-1 SCENIC转录因子分析\2-1 SCENIC转录因子分析\RUNX1_虚拟敲除_Pseudobulk.R\t\tcode/08_RUNX1_contrast/01_virtualKO_pseudobulk.R\nE:\yhb\溃疡\溃疡\2-1 SCENIC转录因子分析\2-1 SCENIC转录因子分析\RUNX1_虚拟敲除_scTenifoldKnk.R\t\tcode/08_RUNX1_contrast/02_scTenifoldKnk.R\nE:\yhb\溃疡\kuiyang\29.molecular docking\configdata.txt\t\tcode/10_docking_MD/01_AutoDockVina_configdata.txt\nE:\yhb\溃疡\kuiyang\29.molecular docking\data.txt\t\tcode/10_docking_MD/02_AutoDockVina_output.txt\nE:\yhb\溃疡\kuiyang\36.Common Visualization Graphs in Molecular Dynamics Simulations\plot_rmsd.py\t\tcode/10_docking_MD/03_plot_MD_RMSD.py\nE:\yhb\溃疡\kuiyang\37.自由能\gibbs.py\t\tcode/10_docking_MD/04_gibbs_free_energy.py\nE:\yhb\溃疡\溃疡\2-1 SCENIC转录因子分析\2-1 SCENIC转录因子分析\RUNX1_GSEA_组图_Reactome.R\t\tcode/09_pathway_enrichment/01_GSEA_Reactome.R\nE:\yhb\溃疡\溃疡\2-1 SCENIC转录因子分析\2-1 SCENIC转录因子分析\RUNX1_GRN_调控网络.R\t\tcode/09_pathway_enrichment/02_GRN_construction.R\nE:\yhb\溃疡\kuiyang\26.Small molecule receptor\Structure2D_COMPOUND_CID_16202215.sdf\t\tcode/10_docking_MD/05_EriB_CID_16202215.sdf\nE:\yhb\溃疡\kuiyang\27.Protein receptor\1CMO.pdb\t\tcode/10_docking_MD/06_RUNX1_1CMO.pdb\nE:\yhb\溃疡\溃疡\05.normalize\ML_output\DEG_results.txt\t\tdata/DEG_results.txt\nE:\yhb\溃疡\溃疡\05.normalize\ML_output\LASSO_genes.txt\t\tdata/LASSO_genes.txt\nE:\yhb\溃疡\溃疡\05.normalize\ML_output\ML_final.txt\t\tdata/ML_final.txt\nE:\yhb\溃疡\溃疡\12.Seurat\04.clusterAnn.txt\t\tdata/04.clusterAnn.txt\nE:\yhb\溃疡\溃疡\12.Seurat\TF_activity_decoupleR.csv\t\tdata/TF_activity_decoupleR.csv\nE:\yhb\溃疡\溃疡\12.Seurat\05.Epithelial cells.diffGene.txt\t\tdata/scRNA_DEG/05.Epithelial cells.diffGene.txt\nE:\yhb\溃疡\溃疡\12.Seurat\05.Fibroblasts.diffGene.txt\t\tdata/scRNA_DEG/05.Fibroblasts.diffGene.txt\nE:\yhb\溃疡\溃疡\12.Seurat\05.Myocytes.diffGene.txt\t\tdata/scRNA_DEG/05.Myocytes.diffGene.txt\nE:\yhb\溃疡\溃疡\12.Seurat\05.Neuroepithelial cell.diffGene.txt\t\tdata/scRNA_DEG/05.Neuroepithelial cell.diffGene.txt\nE:\yhb\溃疡\溃疡\12.Seurat\05.Neurons.diffGene.txt\t\tdata/scRNA_DEG/05.Neurons.diffGene.txt\nE:\yhb\溃疡\溃疡\12.Seurat\05.Smooth muscle.diffGene.txt\t\tdata/scRNA_DEG/05.Smooth muscle.diffGene.txt\nE:\yhb\溃疡\溃疡\_s1_extract\KO_deg.csv\t\tdata/RUNX1_contrast_deg.csv\n
+archive	member	provenance	sha256
+data.zip	04.clusterAnn.txt	Previous public archive	1e191068e7e35ff471a608e765027b7a32e384d6670ac373090843f23162d427
+data.zip	Archived_ROC_scores.csv	Supporting_data/Archived_ROC_scores.csv	a6cf73a4585d83263f1ec0dbd8e008f013e467dc4084ff32522ab989124e199d
+data.zip	Bulk_DEG_patient_adjusted.csv	Supporting_data/Bulk_DEG_patient_adjusted.csv	93b257744383e56307c994f2841f0b07374021969fd3e1cca845c128cb6efd4c
+data.zip	Corrected_AUC.csv	Supporting_data/Corrected_AUC.csv	3d9720921f6536600795d06aa75521bf648ef3de7c4ccc6f7714761dbbf61cfc
+data.zip	GSE107597.normalize.txt	Supporting_data/GSE107597.normalize.txt	ccf66a5b28ebf8867b6496915b27a197e5871569252ed3b7927759d2c689a213
+data.zip	GSE134025.normalize.txt	Supporting_data/GSE134025.normalize.txt	a891432d76fdf6172c94dff4ae8819669dea1004750791bc6fc41aa1a4a9188b
+data.zip	GSE96698.normalize.txt	Supporting_data/GSE96698.normalize.txt	a295ab940819c7d154cf4600bb3eacec9d4f264218d84787f289620d1447f826
+data.zip	KO_enrichment.rds	Supporting_data/KO_enrichment.rds	7720c4107ccbf47a19eae741b20b7fbf68dc39384414c380ebe7473de5510f30
+data.zip	KO_result.rds	Supporting_data/KO_result.rds	597a5c6b9a230fb753494d8466181620d0a9a68540eb34667c3f26aefe8f18db
+data.zip	LASSO_genes.txt	Supporting_data/LASSO_genes.txt	c5bff1c7febb053d297bbea5ad34a4f4ad508b9dad6a132b8ba76eaed985a3f8
+data.zip	ML_final.rds	Supporting_data/ML_final.rds	dd677ad8ca28ff7dcbe2a27cd21d41a37675df25630934a6b8779b7ef7d5d296
+data.zip	ROC_with_GEO_labels.csv	Supporting_data/ROC_with_GEO_labels.csv	a32a8d0d889b1b743bb84f33625ea89165c8c423bf4301ba3d485baf6a20f9bb
+data.zip	RUNX1_contrast_deg.csv	Supporting_data/RUNX1_contrast_selected.csv	04fee61c14fef8cdfa5b574c40aedb2570046fae567f3413c614874c163d7541
+data.zip	S1_Underlying_data_revised.xlsx	Revised submission S1 workbook	dedc8c6ef9d6ef6978b7953734da907ca9a4ee008075c8d072207370ce571ef0
+data.zip	Sample_manifest.csv	Supporting_data/Sample_manifest.csv	4eb8b65afca2d12164a373581f121f666bc182cbbeb7d56177cf7b267330442b
+data.zip	Signature_expression.csv	Supporting_data/Signature_expression.csv	3ce3402fea918be70250c8e9f52201fa2a20787c365f153ca5ec2be4aab8be0d
+data.zip	TF_activity_decoupleR.csv	Previous public archive	bb9ff3e196b8775a46bee4a79da052c4f3955328d0d877e22690941c65de47dd
+data.zip	archive/DEG_results.txt	Previous public archive	fe37c617dbc21c187735555c5a0380f4677f148ce61c8f4242b41d347498f8f1
+data.zip	archive/ML_final.txt	Previous public archive	557020b391cd0e063b999194124e2749e67ee407bfa726f6c612d734aa90ad90
+data.zip	ego_background.txt	Supporting_data/ego_background.txt	1e5f9921d5295a26a1d1e3a658908bf516ddc4655feaa5e18e4fa7a4a8a74e0e
+data.zip	ego_terms.csv	Supporting_data/ego_terms.csv	1c8a1dddbd8c94a5a463426347b7c5b9be07e11be6bf98b224f5cb9171ebf9dc
+data.zip	erea_background.txt	Supporting_data/erea_background.txt	abf6a44f5f81f21c73c7913bfd00e48f49f052f9db506701ee6097065475912f
+data.zip	erea_terms.csv	Supporting_data/erea_terms.csv	c35a97d5edf6caf1c04355ee9dc8c8c55fcb1d846b42c751affe0db8691e22be
+data.zip	scRNA_DEG/05.Epithelial cells.diffGene.txt	Previous public archive	8eb60f3714fb090affc53eaadfaf2f4dec374ca5406d5992f4e46f53a13f383d
+data.zip	scRNA_DEG/05.Fibroblasts.diffGene.txt	Previous public archive	351b07c1ef41a889422423f54f81a2920a8e3885b2ac6057a6bbc288f541d667
+data.zip	scRNA_DEG/05.Myocytes.diffGene.txt	Previous public archive	df9d935ff7fa728042f07fe964d12a492228d00582a1d51c5057af05731a193c
+data.zip	scRNA_DEG/05.Neuroepithelial cell.diffGene.txt	Previous public archive	a87e0cc713108e3fff70d708378bc2de320d597d0ed378aca29271493b2f0df2
+data.zip	scRNA_DEG/05.Neurons.diffGene.txt	Previous public archive	de09cce70d85e6e5a6c0ed31ceccad18b7bdbde3ed90e1ce9dae9d7fef0be9ec
+data.zip	scRNA_DEG/05.Smooth muscle.diffGene.txt	Previous public archive	a34a752fafe7d1ad5f0b543ee010fd9d7fa761c8e7a5ce011f04f3e5d1b99026
+code.zip	01_bulk_normalize_DEG/01_normalize.R	Previous public archive	4dea688a08ebff2c7d839b229dec08dcd0d490f26f67202289f90643808ae1d8
+code.zip	01_bulk_normalize_DEG/02_sva_combat.R	Previous public archive	7eb15eeadcbb11e3d7a8a52660ee2f0bfbf65890dbaecaf234b814a94262bdf2
+code.zip	01_bulk_normalize_DEG/03_limma_DEG.R	Previous public archive	24075314eaee6d67652f86d915d54e49800aa6e31c675e9d01f5e12d9be3627c
+code.zip	02_machine_learning/00_export_ML_txt.R	Previous public archive	26be86d1115d5672c377dd8881081857cf33673713c8964e16630560cd8fccf7
+code.zip	02_machine_learning/01_RUNX1_ML_signature_v2.R	Previous public archive	a8a953a55bb8f5de3e199207b6a2cbc59600482470fcff45e75f1ac0140ad3ef
+code.zip	02_machine_learning/02_RUNX1_Regulatory_Network_Model.R	Previous public archive	5b9e26214321dcf774d3e8fa968148f060c300afe19d57566035e4f4b7e47df9
+code.zip	03_single_cell/01_Seurat_QC_Harmony_annotation.R	Previous public archive	8cb4706d37cd0a72d0205051e80e62585012fd3dbabc07dc5e6a6e53daceb569
+code.zip	03_single_cell/02_Seurat_downstream.R	Previous public archive	617cfdf0e04f5b00ceb4256387995699b5af1180212c4dabc4acc8eaa96742ac
+code.zip	04_TF_activity/01_run_pySCENIC.py	Previous public archive	e5d0d18fa8bf44180bfb136a726606356f3ab8f836c9d32cec8d0a1ccaa8f3e3
+code.zip	04_TF_activity/02_decoupleR_TF_activity.R	Previous public archive	38660523cc2f8fe3150d89500731c8f195c1e166adf8d0562bd7e5dab72fde25
+code.zip	04_TF_activity/03_TF_figures.R	Previous public archive	c3d3d3df8ae020f226fb806b92d69fb27094103f4712a81d3af3ff106f580e13
+code.zip	05_CellChat/01_CellChat_analysis.R	Previous public archive	78f4f83a2da5bda9b57ac6c67879c70c9e6c10f0011b9f75a0828a1689fc42fc
+code.zip	06_pseudotime_Monocle3/01_Monocle3_pseudotime.R	Previous public archive	f36f80bc99a99c90ce39ab043d9fd36910bb6fb1408d1029edeb79604b4e1792
+code.zip	07_fibroblast_subtypes/01_fibroblast_subclustering.R	Previous public archive	58343fcc70774e1d94b6f639c5e1f23c493217d143f08638139e25c5e5bc51e4
+code.zip	08_RUNX1_contrast/01_virtualKO_pseudobulk.R	Previous public archive	9e186b7d046d718b98c743242831f2581128acce12ba8c1b309b2ef5ea1ba828
+code.zip	08_RUNX1_contrast/02_scTenifoldKnk.R	Previous public archive	54c96839690607bb823dbce892cc009205fd287fcd9ab710eb4b090cd165e380
+code.zip	09_pathway_enrichment/01_GSEA_Reactome.R	Previous public archive	f983a564643c44fa2da0f59167028bc6ce2e9cfa77573d979301f11ffa8266da
+code.zip	09_pathway_enrichment/02_GRN_construction.R	Previous public archive	649dc930aaf948679e2fa1307a2b29bcc4fd43ac9adc0e12cdf2b4aa0831a4e1
+code.zip	10_docking_MD/01_AutoDockVina_configdata.txt	Previous public archive	72d7d5859204fbe8e941d6457acbac618fb21ef84c4af90bcd049c4b86269021
+code.zip	10_docking_MD/02_AutoDockVina_output.txt	Previous public archive	8825daca293bc3deac4ee3b5ce500183c1e5a56341ad7e5edcc61a5a5bbc6120
+code.zip	10_docking_MD/03_plot_MD_RMSD.py	Previous public archive	0214284db98c552fa0702f8c8bf8afd35b01b919207987580d8ef0a5f6391486
+code.zip	10_docking_MD/04_gibbs_free_energy.py	Previous public archive	faba4c863ad90db4b7ffa2ae81975a4a9d885d8de316554abca42896daa57602
+code.zip	10_docking_MD/05_EriB_CID_16202215.sdf	Previous public archive	b32cc04b6690e574242db6d9f399aed91c1e7c5f99b56fef02d955af20a2c512
+code.zip	10_docking_MD/06_RUNX1_1CMO.pdb	Previous public archive	9617edf9b93a886c8d8ca600292e9d31388261457f4071b0b8bab88708ff1612
+code.zip	revision_checks/Recalculate_bulk_DEG.R	Supporting_data/Recalculate_bulk_DEG.R	7400cb42089811414972e78245963b32b3e4a31505b5e8afa009ba56fb808428
+code.zip	revision_checks/Verify_model_and_contrast.R	Supporting_data/Verify_model_and_contrast.R	eb29978edcbe29329b93b70835d232cbe6db5b845698bb124fa101a6ea272779
